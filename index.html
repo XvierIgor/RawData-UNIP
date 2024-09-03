@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pag</title>
     <link rel="stylesheet" href="style.css">
-    <title>Login</title>
 </head>
 <body>
-    <div class="main-login">
-        <div class="left-login">
+    <main>
+        <section class="left-login">
             <h1>Faça Login<br>E entre para o nosso time.</h1>
             <img src="planetas.svg" class="left-login-image" alt="Planetas">
-        </div>
-        <div class="right-login">
-            <div class="card-login">
+        </section>
+
+        <section class="login">
+            <form action="index.html">
                 <h1>LOGIN</h1>
-                <div class="textfield">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
-                </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
-                    <a href="https://www.seusite.com/redefinicao-senha?token=EXEMPLO_TOKEN">Esqueceu a senha</a>
-                </div>
-                <button class="btn-login">Login</button>
-            </div>
-        </div>
-    </div>
+                <input type="text" name="user" id="iduser" placeholder="Usuario">
+                <br>
+                <input type="password" name="password" id="idpassword" placeholder="Senha">
+                <br>
+    
+                <a href="#">Esqueceu a senha?</a>
+                <br>
+                <button type="submit">LOGIN</button>
+            </form>
+        </section>
+    </main>
+    
 </body>
 </html>
