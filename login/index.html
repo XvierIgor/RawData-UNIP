@@ -14,16 +14,18 @@
         </section>
 
         <section class="login">
-            <form action="index.html">
+            <form action="#" method="post">
                 <h1>LOGIN</h1>
-                <input type="text" name="user" id="iduser" placeholder="Usuario">
+                <input type="text" name="user" id="iduser" placeholder="Usuario" required>
                 <br>
-                <input type="password" name="password" id="idpassword" placeholder="Senha">
+                <input type="password" name="password" id="idpassword" placeholder="Senha" required>
                 <br>
-    
-                <a href="#">Esqueceu a senha?</a>
+                <a href="/esqueceu-senha/esqueceu-senha.html">Esqueceu a senha?</a>
                 <br>
                 <button type="submit">LOGIN</button>
+                <p>ou</p>
+                <br>
+                <a href="/cadastro/cadastro.html" class="cadastro">CADASTRE-SE</a>
             </form>
         </section>
     </main>
