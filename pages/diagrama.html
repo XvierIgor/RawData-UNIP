@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diagrama Ternário Ambiental</title>
+    <link rel="stylesheet" href="../assets/css/diagrama.css" />
+  </head>
+  <body>
+    <section class="container">
+      <aside class="sidebar">
+        <h2>Impacto Ambiental</h2>
+        <form id="impact-form">
+          <label for="usoSolo">Uso do Solo (%)</label>
+          <input type="number" id="usoSolo" name="usoSolo"  min="0" max="100" required/>
+          <label for="carbono">Emissões de Carbono (%)</label>
+          <input type="number"id="carbono"name="carbono"min="0"max="100"required/>
+          <label for="agua">Poluição da Água (%)</label>
+          <input type="number" id="agua" name="agua"min="0"max="100"required/>
+          <button type="submit">Atualizar Diagrama</button>
+        </form>
+          <br/>
+          <br/>
+      <a href="../pages/login.html">Sair</a>
+      </aside>
+      <main class="content">
+        <h1>Diagrama Ternário</h1>
+        <canvas id="ternaryChart" width="600" height="600"></canvas>
+      </main>
+    </section>
+
+    <script src="../assets/js/diagrama.js"></script>
+  </body>
+</html>
